@@ -1,0 +1,7 @@
+id,name,description,price,quantity,category_id,supplier_id,created_by_id,created_at,updated_at
+1,Laptop,High performance laptop,9000000.00,3,1,1,1,2024-01-04 08:00:00,2024-01-04 08:00:00
+2,Smartphone,Latest model smartphone,4000000.00,4,1,1,1,2024-01-04 09:00:00,2024-01-04 09:00:00
+3,T-Shirt,Cotton T-shirt,150000.00,15,2,2,1,2024-01-04 10:00:00,2024-01-04 10:00:00
+4,Jeans,Denim jeans,120000.00,150,2,2,2,2024-01-04 11:00:00,2024-01-04 11:00:00
+5,Rice,Premium rice 5kg,75000.00,300,3,3,2,2024-01-04 12:00:00,2024-01-04 12:00:00
+6,Novel,Bestseller novel,120000.00,250,4,4,2,2024-01-04 13:00:00,2024-01-04 13:00:00

@@ -1,0 +1,5 @@
+id,name,description,created_by_id,created_at,updated_at
+1,Electronics,Electronic devices and gadgets,1,2024-01-02 08:00:00,2024-01-02 08:00:00
+2,Clothing,Fashion items and accessories,1,2024-01-02 09:00:00,2024-01-02 09:00:00
+3,Food,Food and beverages,2,2024-01-02 10:00:00,2024-01-02 10:00:00
+4,Books,Books and magazines,2,2024-01-02 11:00:00,2024-01-02 11:00:00
