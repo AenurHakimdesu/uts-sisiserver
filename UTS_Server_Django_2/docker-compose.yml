@@ -1,0 +1,24 @@
+services:
+  db:
+    image: postgres:latest
+    container_name: db_uts_test
+    environment:
+      POSTGRES_DB: uts_db
+      POSTGRES_USER: uts_user
+      POSTGRES_PASSWORD: uts_password
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5440:5432"
+
+  web:
+    build: .
+    container_name: web_uts_test
+    # command: sleep infinity
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./app:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db

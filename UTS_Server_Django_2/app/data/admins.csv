@@ -1,0 +1,4 @@
+username,password,email,created_at,updated_at,is_superuser,is_staff
+admin1,123,admin1@email.com,2024-01-01 08:00:00+00,2024-01-01 08:00:00+00,True,True
+admin2,123,admin2@email.com,2024-01-01 08:00:00+00,2024-01-01 08:00:00+00,True,True
+admin3,123,admin3@email.com,2024-01-01 08:00:00+00,2024-01-01 08:00:00+00,True,True

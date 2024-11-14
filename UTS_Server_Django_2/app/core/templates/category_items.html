@@ -1,0 +1,86 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h1>Items dalam Kategori: {{ category.name }}</h1>
+    <div>
+      <a href="{% url 'category_list' %}" class="btn btn-secondary"
+        >Kembali ke Daftar Kategori</a
+      >
+      <a
+        href="{% url 'item_create' %}?category={{ category.id }}"
+        class="btn btn-primary"
+        >Tambah Item Baru</a
+      >
+    </div>
+  </div>
+
+  <div class="card mb-4">
+    <div class="card-body">
+      <h5 class="card-title">Ringkasan Kategori</h5>
+      <div class="row">
+        <div class="col-md-4">
+          <p class="mb-1">Total Items: {{ category.item_count }}</p>
+        </div>
+        <div class="col-md-4">
+          <p class="mb-1">
+            Total Nilai: Rp {{ category.total_value|default:0|floatformat:2 }}
+          </p>
+        </div>
+        <div class="col-md-4">
+          <p class="mb-1">
+            Rata-rata Harga: Rp {{ category.avg_price|default:0|floatformat:2 }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="table-responsive">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Nama Item</th>
+          <th>Stok</th>
+          <th>Harga</th>
+          <th>Total Nilai</th>
+          <th>Supplier</th>
+          <th>Status Stok</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in items %}
+        <tr>
+          <td>{{ item.name }}</td>
+          <td>{{ item.quantity }}</td>
+          <td>Rp {{ item.price|floatformat:2 }}</td>
+          <td>Rp {{ item.total_value|floatformat:2 }}</td>
+          <td>{{ item.supplier.name }}</td>
+          <td>
+            {% if item.quantity < 5 %}
+            <span class="badge bg-danger">Stok Rendah</span>
+            {% else %}
+            <span class="badge bg-success">Stok Cukup</span>
+            {% endif %}
+          </td>
+        </tr>
+        {% empty %}
+        <tr>
+          <td colspan="6" class="text-center">
+            Tidak ada item dalam kategori ini
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+      <tfoot>
+        <tr class="table-info">
+          <td><strong>Total</strong></td>
+          <td><strong>{{ total_quantity }}</strong></td>
+          <td></td>
+          <td><strong>Rp {{ total_value|floatformat:2 }}</strong></td>
+          <td colspan="2"></td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</div>
+{% endblock %}
