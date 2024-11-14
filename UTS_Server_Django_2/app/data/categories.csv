@@ -1,0 +1,6 @@
+id,name,description,created_by_id,created_at,updated_at
+1,Electronics,Perangkat elektronik dan gadget,1,2024-01-02 08:00:00,2024-01-02 08:00:00
+2,Clothing,Aksesories dan pakaian,1,2024-01-02 09:00:00,2024-01-02 09:00:00
+3,Food,Makanan dan snacks,2,2024-01-02 10:00:00,2024-01-02 10:00:00
+4,Books,Buku dan komik,2,2024-01-02 11:00:00,2024-01-02 11:00:00
+5,Drink,Minuman ringan,2,2024-01-02 11:00:00,2024-01-02 11:00:00
