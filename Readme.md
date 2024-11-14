@@ -13,9 +13,9 @@ Proyek ini merupakan aplikasi manajemen inventaris yang bertujuan untuk memudahk
 # Fitur
 
 1. Dashboard Ringkasan Sistem (Kategori, Item, Suppliers, Laporan stok minimal)
-2. Manajemen Kategori (Create, Edit, Delete)
-3. Manajemen Item (Create, Edit, Delete)
-4. Manajemen Suppliers (Create, Edit, Delete)
+2. Manajemen Kategori (Create, Read) 
+3. Manajemen Item (Create, Read)
+4. Manajemen Suppliers (Create, Read)
 
 # Teknologi
 
