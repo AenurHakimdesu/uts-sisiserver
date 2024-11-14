@@ -1,0 +1,38 @@
+{% extends 'base.html' %} {% block content %}
+<h1>Dashboard</h1>
+
+<div class="row mt-4">
+  <div class="col-md-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Total Items</h5>
+        <p class="card-text display-4">{{ total_items }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Jumlah Nilai Keseluruhan</h5>
+        <p class="card-text display-4">Rp {{ total_stock_value }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Kategori</h5>
+        <p class="card-text display-4">{{ total_categories }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Suppliers</h5>
+        <p class="card-text display-4">{{ total_suppliers }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
