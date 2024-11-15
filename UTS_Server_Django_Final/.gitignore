@@ -18,7 +18,7 @@ docker-compose.override.yml
 *.swp
 
 # PostgreSQL
-postgres-data/
+postgres_data/
 
 # VS Code
 .vscode/
