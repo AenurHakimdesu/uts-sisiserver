@@ -32,7 +32,7 @@ Proyek ini merupakan aplikasi manajemen inventaris yang bertujuan untuk memudahk
 
 3. Hapus Folder postgres_data
 
-4. Jalankan perintah berikut untuk membangun dan menjalankan kontainer. Sesuaikan dengan port Anda yang masih kosong (ubah bagian kiri port, misalnya 8000:8000 menjadi 8001:8000): <pre>docker-compose up -d --build</pre>
+4. Jalankan perintah berikut pada terminal VSC Anda untuk membangun dan menjalankan container. Sesuaikan dengan port Anda yang masih kosong (ubah bagian kiri port, misalnya 8000:8000 menjadi 8001:8000): <pre>docker-compose up -d --build</pre>
 
 5. Pada ekstensi PostgreSQL di VSC Anda, Anda dapat membuat koneksi database yang digunakan sesuai dengan informasi database yang berada pada docker-compose.yml seperti Username, Nama Database, Port Database, dan Password.
 
@@ -45,7 +45,7 @@ Proyek ini merupakan aplikasi manajemen inventaris yang bertujuan untuk memudahk
 9. Kemudian, jalankan perintah berikut untuk melakukan import database csv ke database PostgreSQL:
     <pre>python importer.py</pre>
 
-5. Setelah perintah-perintah shell berhasil dijalankan, Anda dapat keluar dari shell dan beralih ke terminal kembali kemudian Anda dapat memulai ulang container docker dengan menjalankan perintah berikut:
+5. Setelah perintah-perintah shell berhasil dijalankan, Anda dapat keluar dari shell dan beralih ke terminal kembali, kemudian Anda dapat memulai ulang container docker dengan menjalankan perintah berikut:
    <pre>docker-compose restart</pre>
 
 7. Akses Aplikasi:
